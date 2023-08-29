@@ -7,3 +7,7 @@ $ sudo apt install docker.io -y
 
 # How to start docker ?
 $ sudo service docker start
+
+# How to check docker status?
+$ sudo service docker status
+
