@@ -1,4 +1,4 @@
-# Azure DevOps Notes Deep Dive
+# Azure Docker Notes Deep Dive
 Installation Docker on Azure VM NAME="Ubuntu" and VERSION="20.04.6 LTS (Focal Fossa)"
 
 $ sudo apt update
