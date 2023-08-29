@@ -4,3 +4,6 @@ Installation Docker on Azure VM NAME="Ubuntu" and VERSION="20.04.6 LTS (Focal Fo
 $ sudo apt update
 
 $ sudo apt install docker.io -y
+
+# How to start docker ?
+$ sudo service docker start
