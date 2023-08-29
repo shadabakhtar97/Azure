@@ -13,10 +13,12 @@ $ sudo service docker status
 
 # How to check docker images?
 $ sudo docker image ls
+
 $ sudo docker images
 
 # How to check docker container?
 $ sudo docker container ls
+
 $ sudo docker ps
 
 
