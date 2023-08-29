@@ -21,5 +21,20 @@ $ sudo docker container ls
 
 $ sudo docker ps
 
+# How to add Docker in sudo group?
+To create the docker group and add your user:
+
+Create the docker group
+
+$ sudo groupadd docker
+
+Add your user to the docker group
+
+$ sudo usermod -aG docker $USER
+
+Log out and log back in so that your group membership is re-evaluated
+
+Verify that you can run docker commands without sudo 
+
 
 
