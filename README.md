@@ -21,6 +21,9 @@ $ sudo docker container ls
 
 $ sudo docker ps
 
+# How to stop container ?
+$ sudo docker container stop <container-id>
+
 # How to add Docker in sudo group?
 To create the docker group and add your user:
 
