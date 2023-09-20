@@ -169,3 +169,9 @@ Azure Application Gateway and Azure Traffic Manager are both Azure services that
    - **Azure Traffic Manager**: Can be used to distribute traffic globally across multiple Azure regions or external endpoints.
 
 In summary, Azure Application Gateway and Azure Traffic Manager serve different purposes and operate at different layers of the network stack. Application Gateway is focused on optimizing and securing web traffic to specific applications, while Traffic Manager is a global DNS-based load balancer for distributing traffic across different regions or endpoints. The choice between them depends on your specific requirements and use cases. Often, they can be used together to achieve high availability and global traffic distribution for web applications.
+
+### WAF stands for azure application gateway
+
+WAF stands for "Web Application Firewall" when referring to Azure Application Gateway. Azure Application Gateway is a web traffic load balancer that can include a Web Application Firewall (WAF) component to help protect web applications from common web exploits and vulnerabilities. The WAF functionality in Azure Application Gateway provides features like protection against SQL injection, cross-site scripting (XSS), and other web application threats.
+
+In summary, WAF in the context of Azure Application Gateway refers to the Web Application Firewall feature that helps enhance the security of web applications hosted on Azure.
