@@ -103,6 +103,12 @@ Here are some key features and functionalities of Azure Application Gateway:
 
 Azure Application Gateway is a valuable service for organizations hosting web applications in Azure, as it helps ensure application availability, security, and performance by managing and controlling incoming traffic effectively. It can be used in conjunction with other Azure services like Azure Virtual Machines, Azure Kubernetes Service, and Azure App Service to create robust and scalable application architectures.
 
+### ----------------------------------------------------------------------------------------------------------------------------
+### SSL and TLS stand for:
 
+1. **SSL:** Secure Sockets Layer
+2. **TLS:** Transport Layer Security
+
+These are cryptographic protocols used to secure internet communications and data transmission between a client (such as a web browser) and a server. SSL was the predecessor to TLS, and over time, TLS has become the more commonly used and secure protocol. Both protocols ensure the confidentiality and integrity of data exchanged over a network, such as the internet, by encrypting the data and verifying the identity of the parties involved in the communication.
 
 
