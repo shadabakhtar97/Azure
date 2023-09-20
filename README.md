@@ -175,3 +175,34 @@ In summary, Azure Application Gateway and Azure Traffic Manager serve different 
 WAF stands for "Web Application Firewall" when referring to Azure Application Gateway. Azure Application Gateway is a web traffic load balancer that can include a Web Application Firewall (WAF) component to help protect web applications from common web exploits and vulnerabilities. The WAF functionality in Azure Application Gateway provides features like protection against SQL injection, cross-site scripting (XSS), and other web application threats.
 
 In summary, WAF in the context of Azure Application Gateway refers to the Web Application Firewall feature that helps enhance the security of web applications hosted on Azure.
+
+### Understanding Azure VNet
+
+Azure Virtual Network (VNet) is a fundamental building block of Microsoft Azure's networking capabilities. It allows you to create private, isolated, and securely connected networks in the Azure cloud. Azure VNets are crucial for various scenarios, such as hosting virtual machines, running web applications, and connecting on-premises networks to the cloud. Here's a comprehensive overview of Azure VNets:
+
+1. **Virtual Isolation:** VNets provide network isolation within Azure, allowing you to segment your resources logically. This isolation ensures that resources in one VNet cannot communicate with resources in another VNet unless explicitly connected.
+
+2. **Subnets:** Inside a VNet, you can create one or more subnets. Subnets are smaller address ranges within the VNet, and you can control the flow of traffic between them using Network Security Groups (NSGs) or Azure Firewall.
+
+3. **Resource Deployment:** You can deploy various Azure resources within a VNet, including virtual machines (VMs), Azure Kubernetes Service (AKS) clusters, Azure App Service Environments, and more. Placing resources in a VNet provides them with a private IP address and allows you to control network traffic to and from these resources.
+
+4. **Connectivity Options:**
+   - **Site-to-Site VPN:** You can connect your on-premises network to an Azure VNet using a Site-to-Site VPN, creating a hybrid network that allows seamless communication between on-premises and cloud resources.
+   - **ExpressRoute:** This is a dedicated private connection to Azure, provided by Azure ExpressRoute partners. It offers higher security and more predictable network performance than a public internet connection.
+   - **VNet Peering:** VNet peering allows VNets to communicate with each other directly over the Azure backbone network, without the need for a VPN or ExpressRoute connection.
+
+5. **Security and Routing:** VNets provide features like Network Security Groups (NSGs) to control inbound and outbound traffic to and from resources, as well as Azure Firewall for advanced network security. You can also set up custom routing tables within VNets to control the flow of traffic between subnets.
+
+6. **Private IP Addressing:** Resources within a VNet can be assigned private IP addresses from the address space of the VNet. This allows for secure, private communication between resources within the same VNet.
+
+7. **Public IP Addresses:** If needed, you can associate public IP addresses with resources in a VNet to allow them to communicate with the internet or to be accessed from the internet.
+
+8. **Load Balancing:** Azure provides load balancing solutions, such as Azure Load Balancer and Azure Application Gateway, which can distribute incoming traffic across multiple resources in a VNet for high availability and scalability.
+
+9. **Monitoring and Diagnostics:** Azure provides tools like Azure Monitor and Azure Network Watcher to monitor and diagnose the health and performance of your VNets and the resources within them.
+
+10. **Integration with Other Azure Services:** Azure VNets can be integrated with various Azure services like Azure Active Directory, Azure Bastion, Azure VPN Gateway, and Azure Virtual WAN to enhance security and connectivity.
+
+11. **Regional Scope:** VNets are associated with a specific Azure region, and resources within a VNet are typically deployed within the same region. However, you can set up global VNets and use Azure Global VNet Peering to connect VNets in different regions.
+
+In summary, Azure VNets are the foundation for building and configuring the network infrastructure in Azure. They enable secure and isolated communication between Azure resources and can be extended to connect on-premises networks or create complex network topologies to meet your specific business needs.
