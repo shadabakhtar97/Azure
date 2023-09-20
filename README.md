@@ -111,4 +111,6 @@ Azure Application Gateway is a valuable service for organizations hosting web ap
 
 These are cryptographic protocols used to secure internet communications and data transmission between a client (such as a web browser) and a server. SSL was the predecessor to TLS, and over time, TLS has become the more commonly used and secure protocol. Both protocols ensure the confidentiality and integrity of data exchanged over a network, such as the internet, by encrypting the data and verifying the identity of the parties involved in the communication.
 
-
+### ----------------------------------------------------------------------------------------------------------------------------
+# Azure Traffic Manager
+### ----------------------------------------------------------------------------------------------------------------------------
