@@ -206,3 +206,56 @@ Azure Virtual Network (VNet) is a fundamental building block of Microsoft Azure'
 11. **Regional Scope:** VNets are associated with a specific Azure region, and resources within a VNet are typically deployed within the same region. However, you can set up global VNets and use Azure Global VNet Peering to connect VNets in different regions.
 
 In summary, Azure VNets are the foundation for building and configuring the network infrastructure in Azure. They enable secure and isolated communication between Azure resources and can be extended to connect on-premises networks or create complex network topologies to meet your specific business needs.
+
+### Azure Vnet hands-on
+
+Creating and configuring a Virtual Network (VNet) in Microsoft Azure involves several steps, including creating the VNet, configuring subnets, and setting up network security groups (NSGs). Here's a step-by-step hands-on guide to create a VNet in Azure:
+
+**Prerequisites:**
+1. An Azure account. If you don't have one, you can sign up for a free trial at [Azure Free Trial](https://azure.com/free).
+2. Azure portal access.
+
+**Step 1: Sign in to Azure Portal**
+Log in to the Azure portal using your Azure account credentials.
+
+**Step 2: Create a Virtual Network (VNet):**
+1. In the Azure portal, click on "Create a resource."
+2. Search for "Virtual network" and select "Virtual network" from the results.
+3. Click the "Create" button to start the VNet creation process.
+
+**Step 3: Configure the Basics:**
+1. Fill in the required details:
+   - **Name**: Choose a unique name for your VNet.
+   - **Region**: Select the Azure region where you want to deploy your VNet.
+   - **Resource Group**: Choose an existing resource group or create a new one.
+   - **Subnet name**: Create a subnet for your VNet or use the default name.
+
+2. Click the "Next" button to proceed.
+
+**Step 4: Configure IP Address Space:**
+1. Under the "Address space" section, define the IP address range for your VNet.
+2. You can add additional address ranges if needed.
+
+**Step 5: Configure Subnets:**
+1. Under the "Subnet" section, click the "Add subnet" button.
+2. Configure the subnet settings, including the subnet name, address range, and any service endpoints you want to enable.
+3. Click the "Add" button to create the subnet.
+
+**Step 6: Configure Security:**
+1. You can add network security groups (NSGs) to control inbound and outbound traffic to your subnets. Click "Add" to configure NSGs if needed.
+
+**Step 7: Review and Create:**
+1. Review the settings to ensure they are correct.
+2. Click the "Create" button to create your VNet.
+
+**Step 8: Wait for Deployment:**
+Azure will now deploy your Virtual Network. This may take a few minutes.
+
+**Step 9: Access VNet Details:**
+1. Once the deployment is complete, you can access your VNet by navigating to "Virtual networks" in the Azure portal.
+2. Select your VNet to view its details, including subnets and associated resources.
+
+**Step 10: Connect Resources:**
+Now that your VNet is set up, you can connect Azure resources like virtual machines, databases, and more to your VNet to allow them to communicate securely within the network.
+
+This hands-on guide covers the basic steps for creating a Virtual Network in Azure. Depending on your specific use case, you may need to configure additional settings such as VPN gateways, peering with other VNets, or setting up ExpressRoute connections for hybrid networking. Azure documentation provides detailed guidance on these advanced configurations based on your requirements.
