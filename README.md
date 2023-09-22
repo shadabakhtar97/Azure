@@ -14,7 +14,6 @@ To sum up, while Azure doesn't have a specific "Security Group" concept like som
 ### ----------------------------------------------------------------------------------------------------------------------------
 
 ### Azure Bastion 
-
 In the context of Microsoft Azure, a "Bastion" refers to Azure Bastion, which is a service that provides secure and seamless remote access to virtual machines (VMs) within an Azure virtual network. Azure Bastion is designed to simplify and enhance the security of connecting to VMs running in Azure, especially when compared to traditional methods like using a public IP address and Remote Desktop Protocol (RDP) or Secure Shell (SSH) directly.
 
 Here are some key features and benefits of Azure Bastion:
@@ -35,7 +34,7 @@ To set up Azure Bastion, you need to have it enabled in your Azure Virtual Netwo
 
 Overall, Azure Bastion is a valuable tool for enhancing the security and ease of remote access to Azure VMs, especially in scenarios where a high level of security and compliance is required.
 
-
+### ----------------------------------------------------------------------------------------------------------------------------
 ### What is Docker ?
 The Docker open-source platform has revolutionized the way we create, deploy, and manage containerized applications
 
