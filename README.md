@@ -13,14 +13,36 @@ To sum up, while Azure doesn't have a specific "Security Group" concept like som
 
 ### ----------------------------------------------------------------------------------------------------------------------------
 
+### Azure Bastion 
 
-# What is Docker ?
+In the context of Microsoft Azure, a "Bastion" refers to Azure Bastion, which is a service that provides secure and seamless remote access to virtual machines (VMs) within an Azure virtual network. Azure Bastion is designed to simplify and enhance the security of connecting to VMs running in Azure, especially when compared to traditional methods like using a public IP address and Remote Desktop Protocol (RDP) or Secure Shell (SSH) directly.
+
+Here are some key features and benefits of Azure Bastion:
+
+1. Secure Remote Access: Azure Bastion provides a secure way to connect to VMs by using Remote Desktop Protocol (RDP) or Secure Shell (SSH) over Transport Layer Security (TLS) directly in the Azure portal. It eliminates the need to expose VMs to the public internet.
+
+2. No Public IP Requirement: With Azure Bastion, you don't need to assign public IP addresses to your VMs, which reduces exposure to potential security threats.
+
+3. Simplified Access Control: Azure Bastion integrates with Azure Active Directory (Azure AD), allowing you to leverage multi-factor authentication (MFA) and role-based access control (RBAC) for fine-grained access management.
+
+4. Streamlined Experience: Users can connect to VMs from the Azure portal itself, eliminating the need for additional client software or VPN connections. It offers a web-based remote desktop experience or SSH session.
+
+5. Audit and Logging: Azure Bastion logs all the activities related to remote connections, making it easier to monitor and audit access to your VMs.
+
+6. Support for VMSS: Azure Bastion can be used to connect to VMs in a Virtual Machine Scale Set (VMSS) as well.
+
+To set up Azure Bastion, you need to have it enabled in your Azure Virtual Network and have the necessary permissions to access and connect to VMs. Azure Bastion is typically billed on a per-hour basis for the time it's provisioned, so it's important to consider cost implications when using this service.
+
+Overall, Azure Bastion is a valuable tool for enhancing the security and ease of remote access to Azure VMs, especially in scenarios where a high level of security and compliance is required.
+
+
+### What is Docker ?
 The Docker open-source platform has revolutionized the way we create, deploy, and manage containerized applications
 
 
 
 
-# Azure Docker Notes Deep Dive
+### Azure Docker Notes Deep Dive
 Installation Docker on Azure VM NAME="Ubuntu" and VERSION="20.04.6 LTS (Focal Fossa)"
 
 $ sudo apt update
