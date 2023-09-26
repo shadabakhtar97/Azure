@@ -296,3 +296,30 @@ Azure will now deploy your Virtual Network. This may take a few minutes.
 Now that your VNet is set up, you can connect Azure resources like virtual machines, databases, and more to your VNet to allow them to communicate securely within the network.
 
 This hands-on guide covers the basic steps for creating a Virtual Network in Azure. Depending on your specific use case, you may need to configure additional settings such as VPN gateways, peering with other VNets, or setting up ExpressRoute connections for hybrid networking. Azure documentation provides detailed guidance on these advanced configurations based on your requirements.
+
+### Azure Key vault 
+Azure Key Vault is a cloud-based service provided by Microsoft Azure that helps you securely manage keys, secrets, and certificates used by cloud applications and services. It is a central repository for managing and safeguarding cryptographic keys and other sensitive information such as passwords, connection strings, and API keys. Azure Key Vault offers several key features and capabilities:
+
+1. **Key Management**: Azure Key Vault allows you to create, import, and manage cryptographic keys, including encryption keys, signing keys, and secrets. These keys can be used to encrypt and decrypt data or to authenticate with various services.
+
+2. **Secrets Management**: You can store and manage sensitive information such as passwords, API keys, and connection strings as secrets within Key Vault. Secrets are stored securely and can be versioned, rotated, and audited.
+
+3. **Certificate Management**: Azure Key Vault provides a secure way to manage digital certificates used for SSL/TLS encryption and code signing. It supports the issuance of certificates and can also automate the renewal of expiring certificates.
+
+4. **Access Control**: Key Vault allows you to define fine-grained access policies to control who can access and manage keys, secrets, and certificates. You can grant permissions to specific users or applications.
+
+5. **Auditing and Monitoring**: Azure Key Vault provides auditing capabilities, allowing you to monitor and log access to keys, secrets, and certificates. This helps in meeting compliance and security requirements.
+
+6. **Integration**: Key Vault can be integrated with various Azure services, including Azure Virtual Machines, Azure App Service, Azure Functions, and Azure Logic Apps, making it easy to securely store and retrieve secrets and keys for your applications.
+
+7. **Managed Hardware Security Modules (HSMs)**: Azure Key Vault offers the option to use Hardware Security Modules (HSMs) for storing and processing cryptographic keys. HSMs provide a higher level of security by ensuring that keys are never exposed in plaintext.
+
+8. **Backup and Recovery**: Azure Key Vault allows you to create backups of your keys, secrets, and certificates, which can be used for disaster recovery scenarios.
+
+9. **Role-Based Access Control (RBAC)**: You can use Azure RBAC to control who can manage and access Key Vault resources within your Azure subscription.
+
+10. **Key Vault Managed Storage (KMS)**: Azure Key Vault can be used as a Key Management Service for encrypting data in Azure Storage accounts, ensuring that data-at-rest is secure.
+
+Azure Key Vault plays a crucial role in securing sensitive information and cryptographic assets for Azure-based applications, and it can also be used in hybrid and multi-cloud scenarios. It is designed to meet various compliance standards and can help organizations meet their regulatory requirements for data protection and encryption.
+
+Please note that Azure services and features may evolve over time, so it's a good practice to refer to the official Azure documentation for the most up-to-date information on Azure Key Vault and its capabilities.
