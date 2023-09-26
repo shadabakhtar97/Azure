@@ -296,7 +296,7 @@ Azure will now deploy your Virtual Network. This may take a few minutes.
 Now that your VNet is set up, you can connect Azure resources like virtual machines, databases, and more to your VNet to allow them to communicate securely within the network.
 
 This hands-on guide covers the basic steps for creating a Virtual Network in Azure. Depending on your specific use case, you may need to configure additional settings such as VPN gateways, peering with other VNets, or setting up ExpressRoute connections for hybrid networking. Azure documentation provides detailed guidance on these advanced configurations based on your requirements.
-
+### ----------------------------------------------------------------------------------------------------------------------------
 ### Azure Key vault 
 Azure Key Vault is a cloud-based service provided by Microsoft Azure that helps you securely manage keys, secrets, and certificates used by cloud applications and services. It is a central repository for managing and safeguarding cryptographic keys and other sensitive information such as passwords, connection strings, and API keys. Azure Key Vault offers several key features and capabilities:
 
