@@ -1,5 +1,6 @@
 ### Azure load balancer in Details
-Azure Load Balancer is a cloud-based service offered by Microsoft Azure that distributes incoming network traffic across multiple virtual machines (VMs) or resources within a virtual network. It plays a crucial role in ensuring high availability, scalability, and fault tolerance for applications hosted in Azure. Here are some key details about Azure Load Balancer:
+Azure Load Balancer is a cloud-based service offered by Microsoft Azure that distributes incoming network traffic across multiple virtual machines (VMs) or resources within a virtual network. It plays a crucial role in ensuring high availability, scalability, and fault tolerance for applications hosted in Azure. 
+**Here are some key details about Azure Load Balancer:**
 
 1. **Load Balancing Algorithms**: Azure Load Balancer uses various load-balancing algorithms to distribute traffic. By default, it uses a five-tuple hash, which takes into account source IP, source port, destination IP, destination port, and protocol to make load-balancing decisions. Other algorithms include round-robin and least-connections.
 
