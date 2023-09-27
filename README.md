@@ -313,9 +313,9 @@ WAF stands for "Web Application Firewall" when referring to Azure Application Ga
 
 In summary, WAF in the context of Azure Application Gateway refers to the Web Application Firewall feature that helps enhance the security of web applications hosted on Azure.
 
-### ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-###                                                                                ------- Azure Networking -------
-### ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### ---------------------------------------------------------------------------------------------------------------
+### ------- Azure Networking -------
+### ---------------------------------------------------------------------------------------------------------------
 ### Understanding Azure VNet
 
 Azure Virtual Network (VNet) is a fundamental building block of Microsoft Azure's networking capabilities. It allows you to create private, isolated, and securely connected networks in the Azure cloud. Azure VNets are crucial for various scenarios, such as hosting virtual machines, running web applications, and connecting on-premises networks to the cloud. Here's a comprehensive overview of Azure VNets:
