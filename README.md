@@ -31,7 +31,7 @@ Azure Load Balancer is a cloud-based service offered by Microsoft Azure that dis
 
 Azure Load Balancer is a fundamental component for building highly available and scalable applications in Microsoft Azure, and it's an essential tool for ensuring that your services remain accessible and responsive to your users.
 ### ----------------------------------------------------------------------------------------------------------------------
-**Hands-on:** How to create Azure load balancer for apache2?
+### **Hands-on:** How to create Azure load balancer for apache2?
 Creating an Azure Load Balancer for an Apache2 web server involves several steps, including setting up the virtual machines (VMs) running Apache2, configuring a backend pool, and creating the load balancer. Here's a step-by-step guide on how to do this:
 
 **Prerequisites**:
