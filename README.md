@@ -313,9 +313,9 @@ WAF stands for "Web Application Firewall" when referring to Azure Application Ga
 
 In summary, WAF in the context of Azure Application Gateway refers to the Web Application Firewall feature that helps enhance the security of web applications hosted on Azure.
 
-### ------------------------------------------------------------------------------------------
-### Azure Networking 
-### ------------------------------------------------------------------------------------------
+### ---------------------------------------------------------------------------------------------------
+###                                                 Azure Networking 
+### ---------------------------------------------------------------------------------------------------
 ### Understanding Azure VNet
 
 Azure Virtual Network (VNet) is a fundamental building block of Microsoft Azure's networking capabilities. It allows you to create private, isolated, and securely connected networks in the Azure cloud. Azure VNets are crucial for various scenarios, such as hosting virtual machines, running web applications, and connecting on-premises networks to the cloud. Here's a comprehensive overview of Azure VNets:
@@ -399,6 +399,51 @@ Azure will now deploy your Virtual Network. This may take a few minutes.
 Now that your VNet is set up, you can connect Azure resources like virtual machines, databases, and more to your VNet to allow them to communicate securely within the network.
 
 This hands-on guide covers the basic steps for creating a Virtual Network in Azure. Depending on your specific use case, you may need to configure additional settings such as VPN gateways, peering with other VNets, or setting up ExpressRoute connections for hybrid networking. Azure documentation provides detailed guidance on these advanced configurations based on your requirements.
+### ----------------------------------------------------------------------------------------------------------------------------
+###                             How to create network in azure for apache2 virtual machine ?
+### ----------------------------------------------------------------------------------------------------------------------------
+To create a network in Azure for an Apache2 virtual machine, you'll typically follow these steps:
+
+1. **Sign in to the Azure Portal:**
+   - Go to the Azure Portal (https://portal.azure.com).
+   - Sign in with your Azure account.
+
+2. **Create a Resource Group (Optional but recommended):**
+   - Resource groups are containers for managing and organizing Azure resources. You can create a new one or use an existing one.
+
+3. **Create a Virtual Network:**
+   - In the Azure Portal, search for "Virtual networks" and select "Virtual networks" from the results.
+   - Click the "+ Add" button to create a new virtual network.
+   - Fill out the required information, including the name, region, and resource group.
+   - Configure the Address space and Subnets as needed. Ensure that the subnet where you plan to place your Apache2 virtual machine is properly defined.
+
+4. **Create a Network Security Group (NSG):**
+   - An NSG is a virtual firewall that controls inbound and outbound traffic to network interfaces, VMs, and subnets.
+   - In the Azure Portal, search for "Network security groups" and select "Network security groups" from the results.
+   - Click the "+ Add" button to create a new NSG.
+   - Define inbound and outbound security rules to allow traffic to and from your Apache2 VM. For example, you might allow HTTP traffic on port 80.
+
+5. **Create a Network Interface (NIC) for Your VM:**
+   - If you haven't already created your Apache2 virtual machine, do so now.
+   - During the VM creation process, you'll be prompted to create or select a network interface. Attach it to the subnet you created earlier.
+
+6. **Associate the NSG with the NIC:**
+   - Once the NIC is created, go to its settings.
+   - Under the "Settings" section, find the "Network security group" option and associate the NSG you created earlier with the NIC.
+
+7. **Create or Configure Your Apache2 Virtual Machine:**
+   - If you haven't already created your Apache2 virtual machine, do so now. Ensure that you select the NIC you created earlier during the VM creation process.
+
+8. **Configure Apache2 on the Virtual Machine:**
+   - SSH into your VM and install and configure Apache2 according to your needs. Use the private IP address assigned to the VM.
+
+9. **Testing:**
+   - After everything is set up, you can test your Apache2 server by accessing it via its public IP address or DNS name. Make sure your NSG rules allow incoming traffic on the appropriate ports (e.g., port 80 for HTTP).
+
+10. **Monitor and Manage:**
+    - Regularly monitor and manage your VM and network resources using Azure tools and services to ensure they are running smoothly and securely.
+
+Remember to configure your NSG and firewall rules carefully to allow only necessary traffic to your Apache2 VM while maintaining security. Additionally, you can consider implementing other security measures like Azure Security Center to enhance the security of your VM and network resources.
 ### ----------------------------------------------------------------------------------------------------------------------------
 ### Azure Key vault 
 Azure Key Vault is a cloud-based service provided by Microsoft Azure that helps you securely manage keys, secrets, and certificates used by cloud applications and services. It is a central repository for managing and safeguarding cryptographic keys and other sensitive information such as passwords, connection strings, and API keys. Azure Key Vault offers several key features and capabilities:
