@@ -30,7 +30,75 @@ Azure Load Balancer is a cloud-based service offered by Microsoft Azure that dis
 12. **Global Load Balancer**: Azure also offers Azure Traffic Manager, which is a DNS-based global load balancer. It can distribute traffic across different Azure regions or external endpoints for global application deployments.
 
 Azure Load Balancer is a fundamental component for building highly available and scalable applications in Microsoft Azure, and it's an essential tool for ensuring that your services remain accessible and responsive to your users.
-### -----------------------------------------------------------------------------------------------------------------
+
+**Hands-on:** How to create Azure load balancer for apache2?
+Creating an Azure Load Balancer for an Apache2 web server involves several steps, including setting up the virtual machines (VMs) running Apache2, configuring a backend pool, and creating the load balancer. Here's a step-by-step guide on how to do this:
+
+**Prerequisites**:
+
+1. You need an active Azure subscription. If you don't have one, you can sign up for a free trial: https://azure.com/free.
+
+2. You should have at least two virtual machines running Apache2. If you don't have them set up, create VMs in Azure or use existing ones.
+
+**Step 1: Create Virtual Machines with Apache2**:
+
+You can either create VMs with Apache2 pre-installed or install Apache2 manually on your existing VMs. Make sure your VMs are in the same Azure Virtual Network.
+
+**Step 2: Configure the VMs**:
+
+Ensure that Apache2 is properly configured to serve web content on each VM. You should also open the HTTP port (usually port 80) in the VMs' network security groups to allow web traffic.
+
+**Step 3: Create a Backend Pool**:
+
+1. Sign in to the Azure Portal (https://portal.azure.com).
+
+2. Go to "All resources" and click on your Load Balancer resource group.
+
+3. In the Load Balancer settings, select "Backend pools."
+
+4. Click on "+ Add a backend pool."
+
+5. Name your backend pool and select your VM instances running Apache2 as members. Ensure that the VMs are in the same virtual network and are properly configured for HTTP traffic.
+
+**Step 4: Create a Health Probe**:
+
+1. In the Load Balancer settings, select "Health probes."
+
+2. Click on "+ Add a probe."
+
+3. Configure the health probe with settings like the port (usually 80 for HTTP), protocol (HTTP), and path (e.g., "/").
+
+4. Save the health probe configuration.
+
+**Step 5: Create a Load Balancing Rule**:
+
+1. In the Load Balancer settings, select "Load balancing rules."
+
+2. Click on "+ Add a rule."
+
+3. Configure the rule with settings like the frontend IP configuration, port (usually 80 for HTTP), backend pool (select the one you created earlier), health probe, and session persistence if needed.
+
+4. Save the rule configuration.
+
+**Step 6: Configure Frontend IP Address**:
+
+1. In the Load Balancer settings, select "Frontend IP configurations."
+
+2. Click on the existing frontend IP configuration or create a new one, and associate it with a public IP address or a private IP address, depending on your use case.
+
+**Step 7: Verify and Save**:
+
+1. Review your Load Balancer settings to ensure they are correctly configured.
+
+2. Save your Load Balancer configuration.
+
+**Step 8: Test the Load Balancer**:
+
+Use the public IP address associated with your Load Balancer to access your Apache2 web servers. The load balancer should distribute incoming traffic evenly across your VM instances.
+
+That's it! You have successfully created an Azure Load Balancer for your Apache2 web servers. This setup helps distribute traffic, improves high availability, and ensures your web application remains accessible even if one of the VMs goes down.
+
+### ----------------------------------------------------------------------------------------------------------------------
 ### Security Group in Microsoft Azure
 
 In Microsoft Azure, a Security Group is not a native construct or feature like it is in some other cloud platforms or networking environments. Instead, Azure uses a combination of other security-related components to provide network security and access control. Two primary components that fulfill similar roles to traditional security groups are Network Security Groups (NSGs) and Azure Firewall.
