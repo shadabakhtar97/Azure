@@ -80,18 +80,18 @@ $ sudo apt update
 
 $ sudo apt install docker.io -y
 
-# How to start docker ?
+### How to start docker ?
 $ sudo service docker start
 
-# How to check docker status?
+### How to check docker status?
 $ sudo service docker status
 
-# How to check docker images?
+### How to check docker images?
 $ sudo docker image ls
 
 $ sudo docker images
 
-# How to check docker container?
+### How to check docker container?
 $ sudo docker container ls
 
 $ sudo docker ps
