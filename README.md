@@ -446,8 +446,9 @@ To create a network in Azure for an Apache2 virtual machine, you'll typically fo
 Remember to configure your NSG and firewall rules carefully to allow only necessary traffic to your Apache2 VM while maintaining security. Additionally, you can consider implementing other security measures like Azure Security Center to enhance the security of your VM and network resources.
 ### ----------------------------------------------------------------------------------------------------------------------------
 ### Module Introduction
-### Understanding Azure Key Vault
-### Azure Key Vault Architecture
+Understanding Azure Key Vault
+Azure Key Vault Architecture
+### ----------------------------------------------------------------------------------------------------------------------------
 
 ### Understanding Azure Key Vault 
 Azure Key Vault is a cloud-based service provided by Microsoft Azure that helps you securely manage keys, secrets, and certificates used by cloud applications and services. It is a central repository for managing and safeguarding cryptographic keys and other sensitive information such as passwords, connection strings, and API keys. Azure Key Vault offers several key features and capabilities:
@@ -476,3 +477,9 @@ Azure Key Vault plays a crucial role in securing sensitive information and crypt
 ### ----------------------------------------------------------------------------------------------------------------------------
 ### Azure Key Vault Architecture
 ![image](https://github.com/shadabakhtar97/Azure/assets/43212251/376a9b7b-bdb1-4590-929a-6f2b9e20c5bb)
+
+### ----------------------------------------------------------------------------------------------------------------------------
+### Module Summary
+Understanding Azure Key Vault
+Azure Key Vault Architecture
+### ----------------------------------------------------------------------------------------------------------------------------
