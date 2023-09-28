@@ -445,7 +445,11 @@ To create a network in Azure for an Apache2 virtual machine, you'll typically fo
 
 Remember to configure your NSG and firewall rules carefully to allow only necessary traffic to your Apache2 VM while maintaining security. Additionally, you can consider implementing other security measures like Azure Security Center to enhance the security of your VM and network resources.
 ### ----------------------------------------------------------------------------------------------------------------------------
-### Azure Key vault 
+### Module Introduction
+### Understanding Azure Key Vault
+### Azure Key Vault Architecture
+
+### Understanding Azure Key Vault 
 Azure Key Vault is a cloud-based service provided by Microsoft Azure that helps you securely manage keys, secrets, and certificates used by cloud applications and services. It is a central repository for managing and safeguarding cryptographic keys and other sensitive information such as passwords, connection strings, and API keys. Azure Key Vault offers several key features and capabilities:
 
 1. **Key Management**: Azure Key Vault allows you to create, import, and manage cryptographic keys, including encryption keys, signing keys, and secrets. These keys can be used to encrypt and decrypt data or to authenticate with various services.
@@ -469,5 +473,6 @@ Azure Key Vault is a cloud-based service provided by Microsoft Azure that helps 
 10. **Key Vault Managed Storage (KMS)**: Azure Key Vault can be used as a Key Management Service for encrypting data in Azure Storage accounts, ensuring that data-at-rest is secure.
 
 Azure Key Vault plays a crucial role in securing sensitive information and cryptographic assets for Azure-based applications, and it can also be used in hybrid and multi-cloud scenarios. It is designed to meet various compliance standards and can help organizations meet their regulatory requirements for data protection and encryption.
-
-Please note that Azure services and features may evolve over time, so it's a good practice to refer to the official Azure documentation for the most up-to-date information on Azure Key Vault and its capabilities.
+### ----------------------------------------------------------------------------------------------------------------------------
+### Azure Key Vault Architecture
+![image](https://github.com/shadabakhtar97/Azure/assets/43212251/376a9b7b-bdb1-4590-929a-6f2b9e20c5bb)
