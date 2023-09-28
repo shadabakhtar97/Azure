@@ -450,6 +450,8 @@ Remember to configure your NSG and firewall rules carefully to allow only necess
 Understanding Azure Key Vault
 
 Azure Key Vault Architecture
+
+Understaind Key Vault Access
 ### ----------------------------------------------------------------------------------------------------------------------------
 
 ### Understanding Azure Key Vault 
@@ -479,6 +481,9 @@ Azure Key Vault plays a crucial role in securing sensitive information and crypt
 ### ----------------------------------------------------------------------------------------------------------------------------
 ### Azure Key Vault Architecture
 ![image](https://github.com/shadabakhtar97/Azure/assets/43212251/376a9b7b-bdb1-4590-929a-6f2b9e20c5bb)
+### ----------------------------------------------------------------------------------------------------------------------------
+### Azure Key Access
+![image](https://github.com/shadabakhtar97/Azure/assets/43212251/c8e08a89-b3f9-41c9-a267-90dbfed5946f)
 
 ### ----------------------------------------------------------------------------------------------------------------------------
 ### Module Summary
@@ -486,4 +491,6 @@ Azure Key Vault plays a crucial role in securing sensitive information and crypt
 Understanding Azure Key Vault
 
 Azure Key Vault Architecture
+
+Understaind Key Vault Access
 ### ----------------------------------------------------------------------------------------------------------------------------
