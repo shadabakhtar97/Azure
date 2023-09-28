@@ -446,7 +446,9 @@ To create a network in Azure for an Apache2 virtual machine, you'll typically fo
 Remember to configure your NSG and firewall rules carefully to allow only necessary traffic to your Apache2 VM while maintaining security. Additionally, you can consider implementing other security measures like Azure Security Center to enhance the security of your VM and network resources.
 ### ----------------------------------------------------------------------------------------------------------------------------
 ### Module Introduction
+
 Understanding Azure Key Vault
+
 Azure Key Vault Architecture
 ### ----------------------------------------------------------------------------------------------------------------------------
 
@@ -480,6 +482,8 @@ Azure Key Vault plays a crucial role in securing sensitive information and crypt
 
 ### ----------------------------------------------------------------------------------------------------------------------------
 ### Module Summary
+
 Understanding Azure Key Vault
+
 Azure Key Vault Architecture
 ### ----------------------------------------------------------------------------------------------------------------------------
