@@ -494,3 +494,62 @@ Azure Key Vault Architecture
 
 Understaind Key Vault Access
 ### ----------------------------------------------------------------------------------------------------------------------------
+### Azure Application Insights Overview
+Azure Application Insights is a cloud-based application performance management (APM) and monitoring service provided by Microsoft Azure. It helps developers and IT professionals gain insights into the performance and behavior of their applications. Here's an overview of its key features and functionalities:
+
+1. **Application Performance Monitoring**: Application Insights allows you to monitor the performance of your web applications, services, and APIs in real-time. It collects telemetry data such as response times, request rates, and failure rates, enabling you to identify bottlenecks and performance issues.
+
+2. **Availability Monitoring**: You can set up availability tests to monitor the responsiveness and availability of your applications from various locations around the world. If your application experiences downtime or becomes unresponsive, Application Insights can alert you, allowing you to take immediate action.
+
+3. **End-to-End Transaction Tracking**: Application Insights provides end-to-end transaction tracing, which allows you to track user interactions through your application stack. You can see how requests flow through various components, including front-end web servers, microservices, and databases, making it easier to diagnose issues.
+
+4. **Dependency Tracking**: It automatically discovers and tracks dependencies between your application components, including external services and databases. This feature helps you understand how external dependencies affect the performance of your application.
+
+5. **Error Tracking and Diagnostics**: Application Insights captures and logs exceptions and errors in your application, along with detailed diagnostic information. You can view error trends, investigate the root causes of issues, and receive alerts when critical errors occur.
+
+6. **Custom Telemetry**: You can instrument your code to track custom telemetry data, such as user events, custom metrics, and logging. This feature allows you to gain insights into specific aspects of your application's behavior that are important to your business.
+
+7. **Integration**: Application Insights seamlessly integrates with various Azure services, including Azure Monitor, Azure DevOps, and Azure Logic Apps. It also supports integration with popular development platforms and languages, such as .NET, Java, Node.js, and more.
+
+8. **Alerting and Notification**: You can set up custom alerts based on performance thresholds or specific conditions. When these conditions are met, Application Insights can trigger notifications through various channels, including email, SMS, and webhook integrations.
+
+9. **Analytics and Insights**: The service provides powerful querying and visualization tools to explore and analyze telemetry data. You can create custom dashboards and reports to gain deeper insights into your application's performance and user behavior.
+
+10. **Live Metrics Stream**: You can use the Live Metrics Stream feature to view real-time telemetry data from your application, allowing you to monitor its health and performance in real-time.
+
+11. **Security and Compliance**: Application Insights adheres to Azure's security and compliance standards, ensuring that your telemetry data is stored and transmitted securely.
+
+12. **Cost Management**: Azure provides cost management tools to help you monitor and control the costs associated with using Application Insights.
+
+In summary, Azure Application Insights is a comprehensive application monitoring and management solution that enables you to proactively identify, diagnose, and resolve performance issues in your applications. It provides a wealth of telemetry data and analytics tools to help you optimize your applications for better performance and user experience.
+### ----------------------------------------------------------------------------------------------------------------------------
+### Azure Monitor Overview
+Azure Monitor is a comprehensive cloud-based monitoring and management service offered by Microsoft Azure. It provides a set of tools and services that allow you to gain insights into the performance, availability, and health of your Azure resources and applications. Azure Monitor is a crucial component of Azure's observability and management capabilities, enabling you to monitor, diagnose, and respond to issues proactively.
+
+Here is an overview of some key features and components of Azure Monitor:
+
+1. **Metrics**: Azure Monitor collects and stores performance metrics from various Azure resources such as virtual machines, databases, and application services. These metrics provide real-time data about the health and performance of your resources. You can configure alerts based on these metrics to receive notifications when specific conditions are met.
+
+2. **Logs**: Azure Monitor also collects logs and telemetry data from your resources. This includes data from application logs, operating system logs, and other sources. You can use Azure Monitor Logs (formerly known as Azure Log Analytics) to query and analyze this data, gain insights, and troubleshoot issues.
+
+3. **Application Insights**: This is a feature within Azure Monitor specifically designed for application performance monitoring (APM). It helps you track the availability, performance, and usage of your web applications and services. Application Insights includes features like request tracking, dependency tracking, and custom telemetry.
+
+4. **Azure Monitor Workbooks**: Workbooks are customizable, interactive reports that allow you to visualize and analyze data from Azure Monitor, Application Insights, and other sources. You can create dashboards and reports tailored to your specific monitoring needs.
+
+5. **Alerts**: Azure Monitor allows you to set up alerts based on metrics and logs data. You can define alert rules and thresholds to trigger notifications or automated actions (e.g., scaling resources) when issues occur.
+
+6. **Autoscale**: You can use Azure Monitor to automate the scaling of your Azure resources based on metrics and predefined conditions. This helps ensure that your applications can handle varying workloads efficiently.
+
+7. **Integration**: Azure Monitor integrates with other Azure services, such as Azure Security Center and Azure Automation, to provide a more comprehensive monitoring and management experience.
+
+8. **Multi-cloud and Hybrid Environments**: Azure Monitor is not limited to monitoring Azure resources only. It can also monitor resources in multi-cloud and hybrid cloud environments, providing a unified view of your infrastructure.
+
+9. **Third-party Integrations**: Azure Monitor supports integration with various third-party monitoring tools and solutions, allowing you to bring in data from external sources and create consolidated dashboards and alerts.
+
+10. **Cost Management**: Azure Monitor can help you optimize your cloud spending by providing insights into resource usage and costs, allowing you to identify cost-saving opportunities.
+
+Overall, Azure Monitor is a powerful tool for managing and monitoring your Azure resources and applications, helping you ensure the performance, availability, and security of your cloud-based workloads. It plays a vital role in maintaining the reliability and efficiency of your Azure-based solutions.
+
+### ----------------------------------------------------------------------------------------------------------------------------
+
+
