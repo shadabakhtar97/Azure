@@ -1,3 +1,96 @@
+### To install the Azure CLI (Command-Line Interface) on your computer, you can follow the steps below based on your operating system. The Azure CLI allows you to interact with Microsoft Azure services and resources from the command line.
+
+**Windows Installation:**
+
+1. **Installer Download:**
+   - Visit the official Azure CLI installation page for Windows: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows
+   - Download the installer for Windows (MSI package).
+
+2. **Run the Installer:**
+   - Double-click the downloaded MSI package to run the installer.
+
+3. **Follow Installation Steps:**
+   - Follow the on-screen instructions to complete the installation. You can choose the default settings for most options.
+
+4. **Verification:**
+   - After installation, open a Command Prompt or PowerShell window and run the following command to verify the installation:
+
+   ```bash
+   az --version
+   ```
+
+   This command should display the Azure CLI version information.
+
+**Linux Installation (Debian/Ubuntu):**
+
+1. **Package Update:**
+   - Open a terminal and update the package repository:
+
+   ```bash
+   sudo apt update
+   ```
+
+2. **Install Dependencies:**
+   - Install required dependencies:
+
+   ```bash
+   sudo apt install -y curl apt-transport-https lsb-release gnupg
+   ```
+
+3. **Azure CLI Repository:**
+   - Download and install the Microsoft signing key:
+
+   ```bash
+   curl -sL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /usr/share/keyrings/microsoft-archive-keyring.gpg
+   ```
+
+   - Add the Azure CLI repository:
+
+   ```bash
+   echo "deb [signed-by=/usr/share/keyrings/microsoft-archive-keyring.gpg] https://packages.microsoft.com/debian/$(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/azure-cli.list
+   ```
+
+4. **Install Azure CLI:**
+   - Update the package repository again and install the Azure CLI:
+
+   ```bash
+   sudo apt update
+   sudo apt install -y azure-cli
+   ```
+
+5. **Verification:**
+   - After installation, open a terminal and run the following command to verify the installation:
+
+   ```bash
+   az --version
+   ```
+
+   This command should display the Azure CLI version information.
+
+**macOS Installation:**
+
+1. **Homebrew Installation (Optional):**
+   - If you have Homebrew installed, you can install the Azure CLI using Homebrew:
+
+   ```bash
+   brew update
+   brew install azure-cli
+   ```
+
+2. **Direct Installation (Alternative):**
+   - Alternatively, you can download and install the Azure CLI for macOS directly from the official website: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos
+
+3. **Verification:**
+   - After installation, open a Terminal window and run the following command to verify the installation:
+
+   ```bash
+   az --version
+   ```
+
+   This command should display the Azure CLI version information.
+
+That's it! You've successfully installed the Azure CLI on your computer. You can now use it to interact with Azure services and resources from the command line.
+### -----------------------------------------------------------------------------------------
 ### Azure load balancer in Details
 Azure Load Balancer is a cloud-based service offered by Microsoft Azure that distributes incoming network traffic across multiple virtual machines (VMs) or resources within a virtual network. It plays a crucial role in ensuring high availability, scalability, and fault tolerance for applications hosted in Azure. 
 
